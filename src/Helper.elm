@@ -3,9 +3,11 @@ module Helper exposing (..)
 import Html
 import Html.Attributes
 
+
 add2 : Int -> Int -> Int
 add2 int1 int2 =
     int1 + int2
+
 
 add3 : Float -> Float -> Float -> Float
 add3 int1 int2 int3 =
@@ -15,6 +17,7 @@ add3 int1 int2 int3 =
 calc : Int -> Int -> (Int -> Int -> Int) -> Int
 calc int1 int2 operator =
     operator int1 int2
+
 
 type alias Lenguaje =
     { name : String, releaseYear : Int, currentVersion : String }
@@ -36,6 +39,7 @@ langs =
 languageNames : List Lenguaje -> List String
 languageNames lista =
     List.map .name lista
+
 
 type alias Usuario =
     { name : String, uType : String }
@@ -64,6 +68,7 @@ isStudent user =
 onlyStudents : List Usuario -> List String
 onlyStudents lista =
     List.map isStudent lista
+
 
 type alias Videogame =
     { title : String
