@@ -112,9 +112,9 @@ type alias Computer =
 myLaptop : Computer
 myLaptop =
     { ram = "16 GB"
-    , model = "Pavilon"
-    , brand = "HP"
-    , screenSize = "12 pulgadas"
+    , model = "MSI ROG"
+    , brand = "MSI"
+    , screenSize = "16 pulgadas"
     }
 
 
